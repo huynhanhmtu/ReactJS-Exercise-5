@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Pony";
+  src: url(../fonts/Pony.ttf);
+}
+
+body {
+  font-family: "Pony";
+  background-color: rgb(255, 155, 2);
+  max-height: 100vh;
+}
+
+.scene {
+  width: 77px;
+  height: 77px;
+  perspective: 50px;
+}
+
+.cube {
+  width: 77px;
+  height: 77px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform infinite;
+  transform: translateZ(-25px);
+}
+
+.cube__face {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+}
+
+.front {
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+}
+.right {
+  transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+}
+.back {
+  transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+}
+.left {
+  transform: rotateY(-90deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+}
+.top {
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateZ(35px);
+}
+.bottom {
+  transform: rotateX(-90deg) rotateY(0deg) rotate(0deg) translateZ(35px);
+}
+
+label {
+  margin-right: 10px;
+}
