@@ -26,7 +26,6 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: transform infinite;
-  transform: translateZ(-25px);
 }
 
 .cube__face {
@@ -36,22 +35,22 @@ body {
 }
 
 .front {
-  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
 }
 .right {
-  transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+  transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
 }
 .back {
-  transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+  transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg);
 }
 .left {
-  transform: rotateY(-90deg) rotateX(0deg) rotateZ(0deg) translateZ(35px);
+  transform: rotateY(-90deg) rotateX(0deg) rotateZ(0deg);
 }
 .top {
-  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translateZ(35px);
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
 }
 .bottom {
-  transform: rotateX(-90deg) rotateY(0deg) rotate(0deg) translateZ(35px);
+  transform: rotateX(-90deg) rotateY(0deg) rotate(0deg);
 }
 
 label {

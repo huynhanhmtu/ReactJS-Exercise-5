@@ -6,24 +6,24 @@ export default function XucXac(props) {
 
   const [propsDice, set] = useSpring(() => ({
     to: {
-      xyz: [720, 720, 720]
+      xyz: [1800, 1800, 1800]
     },
     from: {
       xyz: [0, 0, 0]
     },
     config: {
-      duration: 1000
+      duration: 2000
     },
     reset: true
   }))
+
+  set({xyz:[1800, 1800, 1800]});
 
   // const xucXac = props.xucXacItem; //Không phải distructuring
   const { xucXacItem } = props; //Distructuring
 
   return <div style={{ width: '25%' }}>
-    <animated.div className='scene' style={{
-      transform: propsDice.xyz.interpolate((x,y,z)=>`rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`)
-    }}>
+    <animated.div className='scene' style={{ transform: propsDice.xyz.interpolate((x, y, z) => `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`) }}>
       <div className='cube'>
         <img className='cube__face front' src={xucXacItem.hinhAnh} />
         <img className='cube__face right' src='./img/BaiTapTongHop/ca.png' />
