@@ -21,6 +21,7 @@ export default function XucXac(props) {
 
   // const xucXac = props.xucXacItem; //Không phải distructuring
   const { xucXacItem } = props; //Distructuring
+  console.log(xucXacItem.hinhAnh);
 
   return <div style={{ width: '25%' }}>
     <animated.div className='scene' style={{ transform: propsDice.xyz.interpolate((x, y, z) => `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`) }}>

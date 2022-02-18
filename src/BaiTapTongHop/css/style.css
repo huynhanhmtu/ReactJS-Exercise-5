@@ -42,6 +42,7 @@ body {
 }
 .back {
   transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+  z-index: -1;
 }
 .left {
   transform: rotateY(-90deg) rotateX(0deg) rotateZ(0deg);
